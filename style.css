@@ -1,0 +1,105 @@
+pre {
+  border: 1px dotted gray;
+  background-color: #000000;
+  color: #00ff1e;
+  padding: 0.5em;
+}
+code { font-family: monospace; }
+h1 a, h2 a, h3 a, h4 a, h5 a { text-decoration: none; color: #00ff1e; }
+a img {border: none;}
+h1, h2, h3, h4, h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #00ff1e;
+  clear: both;
+}
+h1 { font-size: 130%; border-bottom: 1px dotted #00ff1e; }
+h2 { font-size: 110%; border-bottom: 1px dotted #00d018; }
+h3 { font-size: 95%; }
+h4, h5 { font-size: 90%; font-style: italic; }
+
+h1.title {
+  font-size: 150%;
+  font-weight: bold;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  text-align: left;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #00ff1e;
+}
+
+
+body {
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-left: 15em;
+  max-width: 50em;
+  border-left: 1px solid #00ff1e;
+  border-right: 1px solid #00ff1e;
+  color: #00ff1e; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 90%;
+  line-height: 140%;
+  background-color: #000000;
+}
+
+a{
+    color: #ff00d0;
+}
+
+.footer {
+  padding-top: 1em;
+  font-size: 70%;
+  color: gray;
+  text-align: center;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0; top: 0;
+  width: 13em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.menu {
+  padding: 0px;
+  margin: 1em;
+  font-size: 130%;
+  line-height: 130%;
+}
+
+.menu li {
+  list-style-type: none;
+}
+
+#TOC {
+  float: left;
+  border: 1px solid #aaa;
+	background-color: #f9f9f9;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+#TOC:before { content: "Page Contents"; }
+#TOC ul { padding-left: 0.5em; margin-left: 0.5em; list-style-type: none; }
+
+dt code { font-weight: bold; }
+dd p { margin-top: 0; }
+
+object, embed { outline: 0; }
+

@@ -1,11 +1,15 @@
+:root{
+  cursor: url("../assets/pointer.ico"), auto;
+}
+
 pre {
   border: 1px dotted gray;
   background-color: #000000;
-  color: #00ff1e;
+  color: 00e41b;
   padding: 0.5em;
 }
 code { font-family: monospace; }
-h1 a, h2 a, h3 a, h4 a, h5 a { text-decoration: none; color: #00ff1e; }
+h1 a, h2 a, h3 a, h4 a, h5 a { text-decoration: none; color: 00e41b; }
 a img {border: none;}
 h1, h2, h3, h4, h5 {
   font-family: 'Courier New', Courier, monospace;
@@ -13,8 +17,8 @@ h1, h2, h3, h4, h5 {
   color: #00ff1e;
   clear: both;
 }
-h1 { font-size: 130%; border-bottom: 1px dotted #00ff1e; }
-h2 { font-size: 110%; border-bottom: 1px dotted #00d018; }
+h1 { font-size: 130%; border-bottom: 1px dotted #00e41b; }
+h2 { font-size: 110%; border-bottom: 1px dotted #00e41b; }
 h3 { font-size: 95%; }
 h4, h5 { font-size: 90%; font-style: italic; }
 
@@ -26,9 +30,13 @@ h1.title {
   text-align: left;
   border: none;
   font-family: 'Courier New', Courier, monospace;
-  color: #00ff1e;
+  color: #00e41b;
+  
 }
 
+h1.subtitle{
+  font-size: 150%; border-bottom: 1px dotted #00e41b;
+}
 
 body {
   padding-right: 10px;
@@ -42,8 +50,8 @@ body {
   font-size: 90%;
   line-height: 140%;
   background-color: #000000;
-  cursor: auto;
-  /*cursor: url("pointer.ico") 16 16, auto;*/
+  overflow-x: hidden;
+  
 }
 
 a{
@@ -51,11 +59,26 @@ a{
     text-decoration: none;
 }
 
-a:hover{
-    color: #600098;
-    /*cursor: crosshair;*/
+a.projects{
+  font-size: 110%;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.projects li{
+  list-style: none;
+  border-bottom: 1px dotted #00652a;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+
+a:hover {
+    color: #7f00c9;
+    cursor: url("../assets/click.ico"), auto !important;
     
 }
+
 
 .footer {
   padding-top: 1em;
@@ -106,17 +129,31 @@ nav .tabs .tab a[data-switcher]{
 }
 
 nav .tabs .tab.is-active a[data-switcher] {
-  color: #6d0098;
+  color: #7f00c9;
   text-decoration: underline wavy #00652a 1px;
   
 }
 
-.pages .page{
-  display: none;
+.blog-list li{
+  list-style: disc;
 }
 
-.pages .page.is-active{
-  display: block;
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:#b90097;
+    opacity: 50%;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color:#7f00c9;
+    opacity: 50%;
 }
 
 #TOC {

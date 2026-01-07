@@ -6,17 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vatsala Budur</title>
     <link rel="stylesheet" href="../assets/style.css">
-    
+    <script src="../index.js"></script>
     
   </head>
   <body>
-    <script src="../index.js"></script>
+    
     <main>
     <section class="pages">
         <div class="page is-active home" data-page = "1">
             <div>
         <div id = "header">
-        <h1 class="title">Vatsala Budur</h1>
+        <h1 class="title" id="home">Vatsala Budur</h1>
     </div>
     <p>
         <a href="#">
@@ -36,29 +36,82 @@
     </p>
     <p>I am very interested in the study of the impact of Artificial Intelligence on academics and human cognition. This website is a platform for me to express my thoughts and findings on the same, however i will be also including projects i have worked on and progress reports.
     </p>
-    <p>My main goal for the rest of 2026, is to create a better internet, more specifically, a human internet. 
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde minus tempore explicabo. Delectus provident consequatur mollitia eveniet repudiandae voluptatum quis magni harum sed. In magni beatae corporis modi perferendis provident!
+    </p>
+    
+    </div>
+        </div>
+        <div >
+            <div>
+                <h1 class="subtitle" id="tbip">The Better Internet Project</h1>
+                <p>My main goal for the rest of 2026, is to create a better internet, more specifically, a human internet. 
         This will be through <em>The Better Internet Project.</em>
         I believe that if a human being did not care to take the time and effort to 
         create something by themselves, there is no use in consuming it, 
         be it written text, generated images, art, videos, or even code. 
-        You can read more about this in the <a data-tab="3">Blog</a> or check out <a data-tab="2">The Better Internet Project</a>.</p>
-    <h1 id="tbip">The Better Internet Project</h1>
-    <a href="tbip.html">click here</a>
-    </div>
-        </div>
-        <div class="page" data-page = "2">
-            <div>
-                <h1 class="title">The Better Internet Project</h1>
+        You can read more about this in the <a href="#">Blog</a> or check out <a href="tbip.html">The Better Internet Project</a>.</p>
             </div>
         </div>
-        <div class="page" data-page = "3">
-            bowa and koala
+        <div >
+            <h1 class="subtitle" id="blog">Blog</h1>
+            <em><strong>Read Recent:</strong></em>
+            <ul class="blog-list">
+                <li>
+                    <a href="#">Academic Integrity vs Artificial Intelligence</a>
+                </li>
+                <li>
+                    <a href="#">The new era of Artificially Intelligent Human Beings</a>
+                </li>
+                <li>
+                    <a href="#">When Passion is Taken for Granted</a>
+                </li>
+                <li>
+                    <a href="#">FOMO with AI use</a>
+                </li>
+                <li>
+                    <a href="#">The Linkedin Uncanny Valley</a>
+                </li>
+            </ul>
         </div>
-        <div class="page" data-page = "4">
-            quala you mean
+        <div >
+           <h1 class="subtitle" id="projects">Projects</h1>
+           <ul class="projects">
+                <li>
+                    <a class = "projects" href="https://github.com/ruduba/ConsoleFPS" target="_blank">Console FPS</a>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam numquam, et cupiditate quas commodi fugit, recusandae porro perferendis placeat mollitia quisquam libero nemo earum sint minima officiis ut cumque molestias.</p>
+                </li>
+                <li>
+                    <a class="projects" href="https://github.com/ruduba/VatChain" target="_blank">VatChain</a>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi dolores nulla aut quidem itaque eaque dolor dolorem. Amet, tempora velit vero porro excepturi maiores quasi dolorum pariatur, commodi minima adipisci.</p>
+                </li>
+                <li>
+                    <a class="projects" href="https://github.com/ruduba/souper-scraper" target="_blank">Souper Scraper</a>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi dolores nulla aut quidem itaque eaque dolor dolorem. Amet, tempora velit vero porro excepturi maiores quasi dolorum pariatur, commodi minima adipisci.</p>
+                </li>
+                <li>
+                    <a class="projects" href="https://github.com/ruduba/ASCII-text-image-video" target="_blank">ASCII Web Cam</a>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi dolores nulla aut quidem itaque eaque dolor dolorem. Amet, tempora velit vero porro excepturi maiores quasi dolorum pariatur, commodi minima adipisci.</p>
+                </li>
+           </ul>
+           
         </div>
-        <div class = "page" data-page = "5">
-            no u idiot
+        <div >
+            <h1 class="subtitle" id="coolstuff">Cool Stuff</h1>
+        </div>
+        <div >
+            <h1 class="subtitle" id="links">Links</h1>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/vatsala-budur/" target="_blank">Linkedin</a>
+                </li>
+                <li>
+                    <a href="mailto:budur.vatsala@gmail.com" target="_blank">Email</a>
+                </li>
+                <li>
+                    <a href="https://github.com/ruduba" target="_blank">Github</a>
+                </li>
+            </ul>
         </div>
     </section>
     </main>
@@ -67,26 +120,29 @@
         <img class="logo" width="100" height="100" src="../assets/favicon.png" alt="i'm a star">
         <ul class="menu tabs">
             <li class="tab is-active">
-                <a data-switcher data-tab = "1" id="1">Home</a>
+                <a href="index.html#home" data-switcher data-tab = "1" id="1">Home</a>
             </li>
             <li class="tab">
-                <a data-switcher data-tab = "2" id="2">The Better Internet Project</a>
+                <a href="tbip.html" data-switcher data-tab = "2" id="2">The Better Internet Project</a>
             </li>
             <li class="tab">
-                <a data-switcher data-tab = "3" id="3">Blog</a>
+                <a href="blog.html" data-switcher data-tab = "3" id="3">Blog</a>
             </li>
             <li class="tab">
-                <a data-switcher data-tab = "4" id="4">Cool Stuff</a>
+                <a href="index.html#projects" data-switcher data-tab = "4" id="4">Projects</a>
             </li>
             <li class="tab">
-                <a data-switcher data-tab = "5" id="5">Contact</a>
+                <a href="index.html#coolstuff" data-switcher data-tab = "5" id="5">Cool Stuff</a>
+            </li>
+            <li class="tab">
+                <a href="index.html#links" data-switcher data-tab = "5" id="5">Links</a>
             </li>
         </ul>
     </div>
     </nav>
     
     <div class="footer">
-        2026 Vatsala Budur  |  Last Updated Mon Jan 05 2026 | 
+        2026 Vatsala Budur  |  Last Updated Wed Jan 07 2026 | 
         <a href="home.html">Home</a>
     </div>
 

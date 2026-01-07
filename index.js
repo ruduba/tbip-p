@@ -1,40 +1,3 @@
-window.onload = () => {
-  const tab_switchers =  document.querySelectorAll('[data-switcher]');
-for(let i = 0; i< tab_switchers.length; i++){
-  const tab_switcher =  tab_switchers[i];
-  const page_id = tab_switcher.dataset.tab;
-
-  tab_switcher.addEventListener('click',() => {
-      document.querySelector('.tabs .tab.is-active').classList.remove('is-active');
-      tab_switcher.parentNode.classList.add('is-active');
-
-      SwitchPage(page_id);
-  });
-
-  }
-
-}
-
-function SwitchPage(page_id){
-    const curr_Page = document.querySelector('.pages .page.is-active');
-    curr_Page.classList.remove('is-active');
-    next_page = document.querySelector(`.pages .page[data-page = "${page_id}"]`);
-    next_page.classList.add('is-active');
-    
-    console.log(next_page.classList);
-}
-
-
-
-var colour="#00ff1e"; // in addition to "random" can be set to any valid colour eg "#f0f" or "red"
-var sparkles=50;
-
-/****************************
-*  Tinkerbell Magic Sparkle *
-*(c)2005-13 mf2fm web-design*
-*  http://www.mf2fm.com/rv  *
-* DON'T EDIT BELOW THIS BOX *
-****************************/
 var x=ox=400;
 var y=oy=300;
 var swide=800;
@@ -48,8 +11,33 @@ var stary=new Array();
 var tinyx=new Array();
 var tinyy=new Array();
 var tinyv=new Array();
+var colour="#ff00d0ff"; 
+var sparkles=20;
 
-window.onload=function() { if (document.getElementById) {
+window.onload = () => {
+  tab_switch();
+  Tinkerbell();
+
+}
+
+function tab_switch(){
+  const tab_switchers =  document.querySelectorAll('[data-switcher]');
+for(let i = 0; i< tab_switchers.length; i++){
+  const tab_switcher =  tab_switchers[i];
+  const page_id = tab_switcher.dataset.tab;
+
+  tab_switcher.addEventListener('click',() => {
+      document.querySelector('.tabs .tab.is-active').classList.remove('is-active');
+      tab_switcher.parentNode.classList.add('is-active');
+
+      console.log(page_id);
+      //SwitchPage(page_id);
+  });
+
+  }
+}
+
+function Tinkerbell(){ if (document.getElementById) {
   var i, rats, rlef, rdow;
   for (var i=0; i<sparkles; i++) {
     var rats=createDiv(3, 3);
@@ -75,6 +63,15 @@ window.onload=function() { if (document.getElementById) {
   set_width();
   sparkle();
 }}
+
+/*function SwitchPage(page_id){
+    const curr_Page = document.querySelector('.pages .page.is-active');
+    curr_Page.classList.remove('is-active');
+    next_page = document.querySelector(`.pages .page[data-page = "${page_id}"]`);
+    next_page.classList.add('is-active');
+    
+    console.log(next_page.classList);
+}*/
 
 function sparkle() {
   var c;
@@ -220,3 +217,8 @@ function newColour() {
   c.sort(function(){return (0.5 - Math.random());});
   return ("rgb("+c[0]+", "+c[1]+", "+c[2]+")");
 }
+/****************************
+*  Tinkerbell Magic Sparkle *
+*(c)2005-13 mf2fm web-design*
+*  http://www.mf2fm.com/rv  *
+****************************/

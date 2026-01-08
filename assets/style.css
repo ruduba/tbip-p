@@ -37,6 +37,9 @@ h1.title {
 h1.subtitle{
   font-size: 150%; border-bottom: 1px dotted #00e41b;
 }
+p{
+  color: #1f8822;
+}
 
 body {
   padding-right: 10px;

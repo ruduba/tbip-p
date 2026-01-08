@@ -165,6 +165,10 @@ footer{
   margin-bottom: 1em;
 }
 
+h1.title.blog{
+  border-bottom: 1px dotted #00ff1e;
+}
+
 #TOC {
   float: left;
   border: 1px solid #aaa;

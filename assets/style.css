@@ -99,6 +99,11 @@ a:hover {
   text-align: center;
 
 }
+.caption{
+  font-size: 70%;
+  text-align: center;
+  color: #95007a;
+}
 
 .sidebar {
   position: fixed;

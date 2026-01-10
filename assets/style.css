@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5 {
   color: #00ff1e;
   clear: both;
 }
-h1 { font-size: 130%; border-bottom: 1px dotted #00e41b; }
+h1 { font-size: 130%; border-bottom: 1px dotted #00a213; border-top: 1px dotted #00a213;}
 h2 { font-size: 110%; }
 h3 { font-size: 95%; }
 h4, h5 { font-size: 90%; font-style: italic; }
@@ -35,10 +35,12 @@ h1.title {
 }
 
 h1.subtitle{
-  font-size: 150%; border-bottom: 1px dotted #00e41b;
+  font-size: 150%; border-bottom: 1px dotted #00a213;
+  text-align: center;
 }
 p{
   color: #1f8822;
+  text-align: justify;
 }
 
 body {
@@ -71,13 +73,14 @@ a{
 .coming-soon{
   color: #949900;
 }
+
 a.projects{
   font-size: 110%;
   font-style: italic;
   font-weight: bolder;
 }
 
-.projects li{
+li .projects {
   list-style: none;
   border-bottom: 1px dotted #00652a;
   margin-bottom: 10px;

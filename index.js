@@ -17,7 +17,6 @@ var sparkles=20;
 window.onload = () => {
   tab_switch();
   Tinkerbell();
-  toggle_blog();
 
 }
 
